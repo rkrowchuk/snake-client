@@ -14,6 +14,12 @@ const connect = function () {
     conn.write('Name: RNK');
   });
 
+  // conn.on("connect", () => {
+  //   setInterval(() => {conn.write("Move: up")}, 50);
+  // });
+
+  
+
   conn.on("data", (data) => {
     console.log(data);// code that does something when data is sent
   });
