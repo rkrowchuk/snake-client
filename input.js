@@ -22,7 +22,13 @@ const handleUserInput = function (key) {
   }  
   if (key === '\u0064') {
     connection.write("Move: right");
-  }  
+  }
+  if (key === '\u0074') {
+    connection.write("Say: helloooooo");
+  } 
+  if (key === '\u0072') {
+    connection.write("Say: sssssssss");
+  } 
   if (key === '\u0003') {
     process.exit();
     }
